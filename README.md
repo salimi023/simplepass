@@ -17,6 +17,8 @@ Basic password/token generator.
 
 * Optional
 
+To generate a test password/token please visit: http://ref.swh-it.hu/simplepass/
+
 ## License
 
 The script can be used according to the rules of MIT license.
