@@ -3,6 +3,11 @@ body {
     padding: 0
 }
 
+img {
+    width: 25px;
+    margin: 5px 0 0 0
+}
+
 #wrapper {
     width: 80%;
     margin: 0 auto 0 auto
@@ -10,6 +15,14 @@ body {
 
 .asterisk {
     color: red
+}
+
+.lang {
+    cursor: pointer
+}
+
+.lang:hover {
+    text-decoration: underline
 }
 
 @media only screen and (max-width: 1000px) {
