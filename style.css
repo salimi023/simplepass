@@ -13,6 +13,9 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+    body {
+        padding: 50px 0 50px 0 !important
+    }
     #wrapper {
         width: 95% !important
     }
