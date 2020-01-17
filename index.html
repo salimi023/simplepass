@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>SimplePass</title>
+    <link href="w3.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="wrapper" class="w3-display-container">
+        <div class="w3-display-middle">
+            <h1>SimplePass</h1>
+            <small>The fields marked with <span class="asterisk w3-margin-bottom">*</span> are obligatory!</span></small>
+            <div id="alert" class="w3-panel w3-red w3-large w3-padding w3-round w3-hide">Please, provide the missing data!</div>
+            <div class="w3-row w3-margin-bottom">
+                <h4><strong>Please, select a type!<span class="asterisk">*</span></strong></h4>
+                <input type="radio" name="type" class="w3-radio" value="letters">&nbsp;Letters&nbsp;
+                <input type="radio" name="type" class="w3-radio" value="numbers">&nbsp;Numbers&nbsp;
+                <input type="radio" name="type" class="w3-radio" value="mix">&nbsp;Letters and numbers
+            </div>
+            <div class="w3-row w3-margin-bottom">
+                <h4><strong>Please, provide the length of the password! (characters)<span class="asterisk">*</span></strong></h4>
+                <input class="w3-input w3-border" type="number" name="length" id="length" min="1" />
+            </div>
+            <div class="w3-row w3-margin-bottom">
+                <button class="w3-btn w3-red w3-round" name="generate" id="generate">Create</button>
+            </div>
+            <div class="w3-row">
+                <h4><strong>Password:</strong></h4>
+                <textarea class="w3-input w3-border w3-margin-bottom" name="pass" id="pass"></textarea>
+                <button class="w3-btn w3-blue w3-round" name="copy" id="copy">Copy to clipboard</button>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="token.js"></script>
+</body>
+
+</html>
